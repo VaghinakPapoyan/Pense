@@ -1,0 +1,1665 @@
+// --------------------------------------------- VARS ---------------------------------------------
+$fontFamily: Hind Siliguri;
+$backgroundColor: transparent;
+$mainColor: #FF7235;
+$textColor: black;
+$padding: 0px;
+$margin: 57px;
+$navFontSize: 18px;
+$navFontSizeAd: 16px;
+$listMargin: 40px;
+
+// --------------------------------------------- Container ---------------------------------------------
+.container
+{
+	width: 1110px;
+	margin: 0px auto;
+}
+.container-fluid
+{
+	width: 100%;
+}
+.container-medium
+{
+	margin: 0px auto;
+	width: 1440px;
+}
+
+// --------------------------------------------- Menu ---------------------------------------------
+.menu
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: $textColor;
+	margin-top: $margin;
+	position: relative;
+}
+
+// --------------------------------------------- Brand ---------------------------------------------
+.menu__brand
+{
+	cursor: pointer;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	.brand__img
+	{
+		background-color: $mainColor;
+		display: flex;
+		align-items: center;
+		width: 40px;
+		height: 40px;
+		justify-content: center;
+		border-radius: 50%;
+		a
+		{
+			color: white;
+			font-family: $fontFamily;
+			font-size: 24px;
+			margin-top: -3px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 23px;
+			letter-spacing: 0em;
+			text-align: left;
+		}
+	}
+	p
+	{
+		font-family: Hind Siliguri;
+		font-size: 23px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 22px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-left: 12px;
+		margin-top: -3px;
+	}
+}
+
+// --------------------------------------------- Navigation ---------------------------------------------
+.menu__navs
+{
+	margin-left: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	li
+	{
+		margin-right: $listMargin;
+		a
+		{
+			font-family: $fontFamily;
+			font-size: $navFontSize;
+			font-style: normal;
+			transition: 0.3s;
+			font-weight: 400;
+			line-height: 17px;
+			letter-spacing: 0em;
+			text-align: left;
+			&:hover
+			{
+				color: $mainColor;
+			}
+		}
+		&:last-child
+		{
+			margin-right: 0px;
+		}
+	}
+}
+
+// --------------------------------------------- Right - Button ---------------------------------------------
+.menu_right
+{
+	.menu__button
+	{
+		background-color: transparent;
+		border: 1px solid $mainColor;
+		padding: 15px 18px;
+		border-radius: 8px;
+		outline: none !important;
+		color: $mainColor;
+		font-family: Hind Siliguri;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 17px;
+		letter-spacing: 0em;
+		text-align: left;
+		overflow: hidden;
+		transition: 0.4s;
+		cursor: pointer;
+		position: relative;
+		&:before
+		{
+			content: "";
+			border-radius: 50%;
+			background-color: $mainColor;
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transition: 0.4s;
+			transform: translate(-50%, -50%);
+			z-index: -1;
+		}
+		&:hover:before
+		{
+			width: 200px;
+			height: 200px;
+		}
+		&:hover
+		{
+			color: white;
+		}
+	}
+}
+
+// --------------------------------------------- DropdownIcon ---------------------------------------------
+.dropdownIcon
+{
+	cursor: pointer;
+	display: none;
+	div
+	{
+		transition: 0.4s;
+		border-radius: 20px;
+		margin: 3.5px 0px;
+		height: 4px;
+		width: 30px;
+		background-color: $mainColor;
+	}		
+}
+
+// --------------------------------------------- Dropdown Menu ---------------------------------------------
+.menu__dropdown
+{
+	display: none;
+	position: absolute;
+	left: 100vw;
+	top: 100%;
+	transition: 0.4s;
+	transform: translateX(0%);
+	&_active
+	{
+		left: 100%;
+		transform: translateX(-100%);
+	}
+	.dropdown__navs
+	{
+		background-color: white;
+		padding: 10px;
+		position: relative;
+		left: 10px;
+		border-radius: 4px;
+		li
+		{
+			margin: 7px 0px;
+			text-align: right;
+			a
+			{
+				font-family: $fontFamily;
+				font-size: $navFontSize;
+				font-style: normal;
+				transition: 0.3s;
+				font-weight: 400;
+				line-height: 17px;
+				letter-spacing: 0em;
+				text-align: left;
+				&:hover
+				{
+					color: $mainColor;
+				}
+			}
+			&:last-child
+			{
+				margin-right: 0px;
+			}
+		}
+	}
+}
+
+// --------------------------------------------- MainPage ---------------------------------------------
+.main_page
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 114px;
+	.main_page__left
+	{
+		width: 48%;
+		i
+		{
+			font-family: Hind Siliguri;
+			font-size: 22px;
+			font-style: normal;
+			display: block;
+			font-weight: 400;
+			line-height: 36px;
+			letter-spacing: 0em;
+			color: #BDBDBD;
+			margin-bottom: 24px;
+			text-align: left;
+		}
+		h1
+		{
+			font-family: Hind Siliguri;
+			font-size: 96px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 96px;
+			letter-spacing: 0em;
+			text-align: left;
+			margin-bottom: 20px
+		}
+		p
+		{
+			font-family: Hind Siliguri;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 39px;
+			letter-spacing: 0em;
+			color: #BDBDBD;
+			text-align: left;
+		}
+		.main_page__last
+		{
+			margin-top: 40px;
+			display: flex;
+			align-items: center;
+			button
+			{
+				font-family: Hind Siliguri;
+				font-size: 24px;
+				padding: 18px 24px;
+				outline: none;
+				border: none;
+				border-radius: 8px;
+				background-color: $mainColor;
+				font-style: normal;
+				cursor: pointer;
+				font-weight: 400;
+				line-height: 39px;
+				letter-spacing: 0em;
+				text-align: left;
+				display: flex;
+					overflow: hidden;
+				align-items: center;
+				color: white !important;
+				position: relative;
+				justify-content: center;
+				margin-right: 24px;
+				&:before
+				{
+					content: "";
+					border-radius: 50%;
+					background-color: rgba(255,255,255, 0.2);
+					width: 0px;
+					height: 0px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transition: 0.4s;
+					transform: translate(-50%, -50%);
+					z-index: 2;
+				}
+				&:hover:before
+				{
+					width: 300px;
+					height: 300px;
+				}
+				&:hover
+				{
+					color: white;
+				}
+				img
+				{
+					display: block;
+					margin-left: 14px;
+				}
+			}
+		}
+	}
+	.main_page__right
+	{
+		width: 48%;
+		img
+		{
+			width: 100%;
+			display: block;
+		}
+	}
+}
+
+// --------------------------------------------- Admin ---------------------------------------------
+.admin
+{
+	margin-top: 210px;
+	padding-top: 87px;
+	position: relative;
+	.amdin__img
+	{
+		width: 100%;
+		display: block;
+	}
+}
+.admin_bg
+{
+	background-color: $mainColor;
+}
+
+// --------------------------------------------- Brand ---------------------------------------------
+.brand
+{
+	margin-top: 82px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between !important;
+	img
+	{
+		display: block;
+	}
+}
+
+// --------------------------------------------- slick slider ---------------------------------------------
+.slick-slide
+{
+	margin: 0px 30px !important;
+}
+.slick-track
+{
+	  display: flex;
+  		height: auto;
+  		align-items: center;
+  		justify-content: space-beetwen;
+}
+
+
+// --------------------------------------------- main_page1 ---------------------------------------------
+.main_page1
+{
+	margin-top: 143px;
+	.main_page__left
+	{
+
+		.main_page__last
+		{
+			button
+			{
+				background-color: transparent !important;
+				color: $mainColor !important;
+				padding: 0px !important;
+			}
+		}
+	}
+}
+
+
+// --------------------------------------------- main_page2 ---------------------------------------------
+.main_page2
+{
+	flex-direction: row;
+	.main_page__left
+	{
+		order: 1 !important;
+	}
+	margin-top: 71px !important;
+	padding-top: 72px;
+	padding-bottom: 72px;
+}
+.main_page_bg
+{
+	background-color: #FFFAF8;
+}
+.main_page4
+{
+	margin-top: 71px !important;
+}
+
+// --------------------------------------------- main page product ---------------------------------------------
+.main_page_product
+{
+	.main_page__left
+	{
+		display: flex;
+		align-items: center;
+		width: 100% !important;
+		h1
+		{
+			width: 70% !important;
+			text-align: left !important;
+		}
+		p
+		{
+			width: 30% !important;
+			text-align: left !important;
+		}
+	}
+}
+
+// --------------------------------------------- features ---------------------------------------------
+.features
+{
+	padding-bottom: 139px;
+	display: flex;
+	margin-top: 80px;
+	justify-content: center;
+	align-items: center;
+	.features_block
+	{
+		width: 32%;
+		padding-top: 63px;
+		padding-bottom: 111px;
+		text-align: center;
+		margin-right: 2%;
+		border-radius: 12px;
+		&:last-child
+		{
+			margin-right: 0%;
+		}
+		h3
+		{
+			font-family: Hind Siliguri;
+			font-size: 30px;
+			font-style: normal;
+			font-weight: 500;
+			margin-top: 24px;
+			margin-bottom: 12px;
+			line-height: 30px;
+			letter-spacing: 0em;
+			text-align: center;
+		}
+		p
+		{
+			font-family: Hind Siliguri;
+			font-size: 14px;
+			font-style: normal;
+			width: 70%;
+			font-weight: 400;
+			line-height: 23px;
+			letter-spacing: 0em;
+			color: #BDBDBD;
+			margin: 0px auto;
+			text-align: center;
+		}
+		.features_img
+		{
+			width: 64px;
+			margin: 0px auto;
+			height: 64px;
+			display: flex;
+			justify-content: center;
+			border-radius: 50%;
+			align-items: center;
+		}
+		&:first-child .features_img
+		{
+			background-color: rgba(255, 189, 116, 0.05);
+		}
+		&:nth-child(2) .features_img
+		{
+			background-color: rgba(226, 89, 139, 0.05);
+			
+		}
+		&:last-child .features_img
+		{
+			background-color: rgba(77, 18, 238, 0.05);
+		}
+		&_active
+		{
+			box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.04);
+		}
+	}
+}
+.features1
+{
+	.features_block
+	{
+		padding: 40px !important;
+		text-align: left !important;
+	}
+	h4
+	{
+		font-family: Hind Siliguri;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 39px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-top: 24px;
+		i
+		{
+			font-family: Hind Siliguri;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 300;
+			line-height: 32px;
+			letter-spacing: 0em;
+			color: #bdbdbd;
+			text-align: left;
+		}
+	}
+	i
+	{
+		font-family: Hind Siliguri;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 19px;
+		letter-spacing: 0em;
+		text-align: left;
+		color: #BDBDBD;
+	}
+	h3
+	{
+		text-align: left !important;
+		margin-top: 27px !important;
+		margin-bottom: 24px !important;
+	}
+	p
+	{
+		display: flex;
+		align-items: center;
+		margin: 0px !important;
+		text-align: left !important;
+		font-family: Hind Siliguri;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 29px;
+		letter-spacing: 0em;
+		margin-bottom: 8px;
+		color: black !important;
+		text-align: left;
+		img
+		{
+			margin-right: 11px !important;
+		}
+	}
+	button
+	{
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		font-family: Hind Siliguri;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 26px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-top: 40px;
+		color: $mainColor;
+		padding: 12px 24px;
+		border: 1px solid $mainColor;
+		background-color: transparent;
+		&.active
+		{
+			background-color: $mainColor;
+			color: white;
+		}
+		border-radius: 4px;
+		img
+		{
+			margin-left: 10px;
+		}
+	}
+}
+
+// --------------------------------------------- title ---------------------------------------------
+.title
+{
+	font-family: Hind Siliguri;
+	font-size: 72px;
+	font-style: normal;
+	padding-top: 124px;
+	padding-bottom: 80px;
+	font-weight: 700;
+	color: black !important;
+	line-height: 72px;
+	font-weight: 600;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+// --------------------------------------------- feedback ---------------------------------------------
+.feedback
+{
+	&__block
+	{
+		position: relative;
+		&:before
+		{
+			content: "";
+			width: 100%;
+			background-color: #4756DF;
+			height: 10px;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			top: 0px;
+		}
+		&.r:before
+		{
+			background-color: #FF7235;
+		}
+		&.o:before
+		{
+			background-color: #FFBE21;
+		}
+		&.p:before
+		{
+			background-color: #4756DF;
+		}
+		&.b:before
+		{
+			background-color: #3EC1F3;
+		}
+		&.br:before
+		{
+			background-color: #BB7259;
+		}
+		border-radius: 12px;
+		padding: 26px 28px;
+		border: 1px solid #F5F5F5;
+		overflow: hidden;
+	}
+	p
+	{
+		font-family: Hind Siliguri;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 29px;
+		letter-spacing: 0em;
+		text-align: left;
+
+	}
+	b
+	{
+		font-family: Hind Siliguri;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 26px;
+		letter-spacing: 0em;
+		text-align: left;
+		margin-left: 12px;
+	}
+	img
+	{
+		width: 30px;
+		height: 30px;
+		display: block;		
+	}
+	i
+	{
+		font-family: Hind Siliguri;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 26px;
+		letter-spacing: 0em;
+		text-align: left;
+	}
+	.feedback__user
+	{
+		margin-top: 24px;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+	}
+}
+
+// --------------------------------------------- download ---------------------------------------------
+.download
+{
+	padding-bottom: 301px;
+	margin-top: 157px;
+	h1
+	{
+		color: white !important;
+		padding-bottom: 24px;
+	}
+	p
+	{
+		font-family: Hind Siliguri;
+		font-size: 36px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 36px;
+		letter-spacing: 0em;
+		text-align: center;
+		color: white !important;
+	}
+	button
+	{
+		font-family: Hind Siliguri;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 21px;
+		letter-spacing: 0em;
+		background-color: white;
+		border: 0px;
+		cursor: pointer;
+		outline: none !important;
+		background-color: white;
+		border-radius: 8px;
+		color: $mainColor;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 24px;
+		text-align: left;
+		margin: 0px auto;
+		margin-top: 60px;
+		img
+		{
+			margin-left: 14px;
+		}
+	}
+	.download__last
+	{
+		position: relative;
+		.img1
+		{
+			position: absolute;
+			top: -55px;
+			margin-left: 75px;
+			left: 100%;
+			transform: translateX(-100%);
+		}
+		.img2
+		{
+			position: absolute;
+			top: -55px;
+			left: -90px;
+		}
+	}
+}
+
+// --------------------------------------------- footer ---------------------------------------------
+footer
+{
+	padding-top: 81px !important;
+	display: flex !important;
+	justify-content: space-between;
+	align-items: start;
+	.footer__brand
+	{
+		cursor: pointer;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		.brand__img
+		{
+			background-color: $mainColor;
+			display: flex;
+			align-items: center;
+			width: 40px;
+			height: 40px;
+			justify-content: center;
+			border-radius: 50%;
+			a
+			{
+				color: white;
+				font-family: $fontFamily;
+				font-size: 24px;
+				margin-top: -3px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 23px;
+				letter-spacing: 0em;
+				text-align: left;
+			}
+		}
+		p
+		{
+			font-family: Hind Siliguri;
+			font-size: 23px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 22px;
+			letter-spacing: 0em;
+			text-align: left;
+			margin-left: 12px;
+			margin-top: -3px;
+		}
+	}
+	.footer_block
+	{
+		h4
+		{
+			font-family: Hind Siliguri;
+			font-size: 24px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 39px;
+			letter-spacing: 0em;
+			margin-bottom: 24px;
+			text-align: left;
+		}
+		p
+		{
+			font-family: Hind Siliguri;
+			font-size: 18px;
+			margin-bottom: 8px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 29px;
+			letter-spacing: 0em;
+			cursor: pointer;
+			text-align: left;
+			&:hover
+			{
+				color: $mainColor;
+			}
+			&:last-child
+			{
+				margin-bottom: 0px;
+			}
+		}
+		i
+		{
+			font-family: Hind Siliguri;
+			font-size: 20px;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 32px;
+			margin-top: 24px;
+			margin-bottom: 18px;
+			display: block;
+			letter-spacing: 0em;
+			text-align: left;
+			margin-bottom: 18px;
+			color: #bdbdbd;
+		}
+		i.small
+		{
+			font-family: Hind Siliguri !important;
+			font-size: 14px !important;
+			font-style: normal !important;
+			font-weight: 400 !important;
+			margin-top: 10px !important;
+			margin-bottom: 0px !important;
+			line-height: 23px !important;
+			letter-spacing: 0em !important;
+			text-align: left !important;
+			margin-top: 10px;
+			display: block;
+			color: #bdbdbd !important;
+		}
+		.footer_input
+		{
+			position: relative;
+			input
+			{
+				font-family: Hind Siliguri;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 29px;
+				letter-spacing: 0em;
+				text-align: left;
+				width: 84%;
+				padding: 17px 8%;
+				border: 0px;
+				outline: none !important;
+				border-radius: 8px;
+				border: 1px solid #292830
+			}
+			button
+			{
+				position: absolute;
+				left: 98%;
+				top: 50%;
+				cursor: pointer;
+				color: white;
+				font-family: Hind Siliguri;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 26px;
+				letter-spacing: 0em;
+				text-align: left;
+				background-color: $mainColor;
+				border: none;
+				outline: none !important;
+				border-radius: 8px;
+				padding: 11px 17px;
+				transform: translateX(-100%) translateY(-50%);
+			}
+		}
+	}
+}
+.footer__bottom
+{
+	padding: 20px 0px;
+	display: flex;
+	margin-top: 40px;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid rgba(189, 189, 189, 0.2);
+	.contact
+	{
+		display: flex;
+		align-items: center;
+		p
+		{
+			cursor: pointer;
+			transition: 0.3s;
+			margin-right: 24px;
+			&:last-child
+			{
+				margin-right: 0px;
+			}
+			&:hover
+			{
+				color: $mainColor;
+			}
+		}
+	}
+	p
+	{
+		font-family: Hind Siliguri;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 23px;
+		letter-spacing: 0em;
+		text-align: left;
+		cursor: pointer;
+		&:hover
+		{
+			color: $mainColor;
+		}
+	}
+	img
+	{
+		cursor: pointer;
+		margin-right: 14.5px;
+		&:last-child
+		{
+			margin-right: 0px;
+		}
+	}
+}
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ Media 1200 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@media screen and (max-width: 1200px) 
+{
+
+	// --------------------------------------------- Container ---------------------------------------------
+	.container
+	{
+		width: 756px;
+	}
+	.container-medium
+	{
+		width: 92% !important;
+	}
+	// --------------------------------------------- Navigation ---------------------------------------------
+	.menu__navs
+	{
+		margin-left: 0px;
+		li
+		{
+			margin-right: $listMargin;
+			a
+			{
+				font-size: $navFontSizeAd;
+			}
+		}
+	}
+	// --------------------------------------------- Right - Button ---------------------------------------------
+	.menu_right
+	{
+		.menu__button
+		{
+			padding: 10px 14px;
+			border-radius: 6px;
+			font-size: 16px;
+		}
+	}
+	// --------------------------------------------- main page product ---------------------------------------------
+	.main_page_product
+	{
+		.main_page__left
+		{
+			display: block;
+			h1
+			{
+				text-align: center !important;
+				width: 100% !important;
+			}
+			p
+			{
+				text-align: center !important;
+				width: 100% !important;
+			}
+		}
+	}
+	// --------------------------------------------- download ---------------------------------------------
+	.download
+	{
+		margin-top: 130px;
+		p
+		{
+			font-size: 32px;
+		}
+		.download__last
+		{
+			position: relative;
+			.img1
+			{
+				top: -25px;
+			}
+			.img2
+			{
+				top: -25px;
+			}
+		}
+	}
+	.features1
+	{
+		.features_block
+		{
+			padding: 30px 20px !important;
+		}
+		h4
+		{
+			font-size: 22px;
+		}
+	}
+
+	// --------------------------------------------- footer ---------------------------------------------
+	footer
+	{
+		padding-top: 70px !important;
+		.footer_block
+		{
+			h4
+			{
+				font-size: 20px;
+				margin-bottom: 15px;
+			}
+			p
+			{
+				font-size: 15px;
+				margin: 0px;
+				cursor: pointer;
+			}
+			i
+			{
+				font-size: 17px;
+			}
+			i.small
+			{
+				font-size: 11px !important;
+			}
+		}
+		.footer_input
+		{
+			input
+			{
+				font-size: 14px !important;
+				padding: 12px 8% !important;
+			}
+			button
+			{
+				font-size: 14px !important;
+				padding: 5px 11px !important;
+			}
+		}
+	}
+
+	// --------------------------------------------- MainPage ---------------------------------------------
+	.main_page
+	{
+		margin-top: 80px;
+		display: block;
+		.main_page__left
+		{
+			width: 100%;
+			h1
+			{
+				text-align: center;
+				line-height: 85px;
+			}
+			p
+			{
+				text-align: center;
+			}
+			i
+			{
+				margin-bottom: 15px;
+				font-size: 20px;
+			}
+			.main_page__last
+			{
+				justify-content: center;
+			}
+		}
+		.main_page__right
+		{
+			margin: 0px auto;
+			width: 90%;
+			margin-top: 35px;
+		}
+	}
+	.main_page2
+	{
+		padding-top: 40px;
+		padding-bottom: 40px;
+		margin-top: 40px !important;
+	}
+	.main_page4
+	{
+		margin-top: 40px !important;
+	}
+	// --------------------------------------------- admin ---------------------------------------------
+	.admin
+	{
+		margin-top: 150px;
+	}
+
+	// --------------------------------------------- slick slider ---------------------------------------------
+	.slick-slide
+	{
+		margin: 0px 25px !important;
+	}
+
+	//--------------------------------------------- menu ---------------------------------------------
+	.menu
+	{
+		margin-top: 40px !important;
+	}
+
+	// --------------------------------------------- features ---------------------------------------------
+	.features
+	{
+		padding-bottom: 100px;
+		margin-bottom: 90px;
+		margin-top: 60px;
+		.features_block
+		{
+			padding-top: 50px;
+			padding-bottom: 85px;
+			h3
+			{
+				font-size: 26px;
+			}
+			p
+			{
+				font-size: 12px;
+			}
+		}
+	}
+
+	// --------------------------------------------- title ---------------------------------------------
+	.title
+	{
+		font-size: 62px;
+		line-height: 62px;
+		padding-bottom: 68px;
+		padding-top: 100px;
+	}
+	.feedback
+	{
+		p
+		{
+			font-size: 16px;
+		}
+		b
+		{
+			font-size: 14px;
+		}
+		img
+		{
+			width: 25px;
+			height: 25px;
+			display: block;		
+		}
+		i
+		{
+			font-size: 14px;
+		}
+		.feedback__user
+		{
+			margin-top: 15px;
+		}
+	}
+}
+
+
+
+// --------------------------------------------- Media 850 ---------------------------------------------
+@media screen and (max-width: 850px) 
+{
+	// --------------------------------------------- Container ---------------------------------------------
+	.container
+	{
+		width: 92%;
+	}
+
+	.features1
+	{
+		margin-bottom: 0px !important;
+		padding-bottom: 124px;
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 50px;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		.features_block
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			width: 90%;
+			padding-top: 63px;
+			margin: 0px auto !important;
+			margin-top: 10px;
+			padding-bottom: 111px;
+			h3
+			{
+				font-size: 30px !important;
+				text-align: center !important;
+			}
+			p
+			{
+				font-size: 14px !important;
+				justify-content: center;
+				text-align: center !important;
+			}
+			button
+			{
+				margin-top: 20px;
+			}
+		}
+	}
+	// --------------------------------------------- admin ---------------------------------------------
+	.admin
+	{
+		margin-top: 100px;
+	}
+
+	// --------------------------------------------- footer ---------------------------------------------
+	footer
+	{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 30px !important;
+		.footer__brand
+		{
+			display: none;
+		}
+		.footer_block
+		{
+			margin: 0px;
+			h4
+			{
+				font-size: 20px;
+				margin-top: 20px;
+				text-align: center;
+				margin-bottom: 15px;
+				margin-bottom: 5px;
+			}
+			p
+			{
+				font-size: 15px;
+				text-align: center;
+				margin: 0px;
+				cursor: pointer;
+				transition: 0.4s;
+				&:hover
+				{
+					color: $mainColor;
+				}
+			}
+			i
+			{
+				font-size: 17px;
+				margin-top: 15px;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+			i.small
+			{
+				font-size: 11px !important;
+				text-align: center !important;
+			}
+		}
+		.footer_input
+		{
+			input
+			{
+				font-size: 14px !important;
+				padding: 12px 8% !important;
+			}
+			button
+			{
+				font-size: 14px !important;
+				padding: 5px 11px !important;
+			}
+		}
+	}
+
+	// --------------------------------------------- slick slider ---------------------------------------------
+	.slick-slide
+	{
+		margin: 0px 30px !important;
+	}
+	//--------------------------------------------- menu ---------------------------------------------
+	.menu
+	{
+		margin-top: 30px !important;
+	}
+	// --------------------------------------------- title ---------------------------------------------
+	.title
+	{
+		font-size: 50px;
+		line-height: 50px;
+		padding-bottom: 58px;
+		padding-top: 80px;
+	}
+	// --------------------------------------------- download ---------------------------------------------
+	.download
+	{
+		margin-top: 100px;
+		h1
+		{
+			line-height: 32px;
+		}
+		padding-bottom: 80px;
+		p
+		{
+			line-height: 26px;
+			font-size: 26px;
+		}
+		.download__last
+		{
+			position: relative;
+			.img1
+			{
+				display: none;
+			}
+			.img2
+			{
+				display: none;
+			}
+		}
+	}
+}
+
+
+
+// --------------------------------------------- Media 700 ---------------------------------------------
+@media screen and (max-width: 700px) 
+{
+	//--------------------------------------------- menu ---------------------------------------------
+	.menu
+	{
+		margin-top: 20px !important;
+	}
+	// --------------------------------------------- Brand ---------------------------------------------
+	.brand
+	{
+		margin-top: 50px !important;
+	}
+	// --------------------------------------------- Navigation ---------------------------------------------
+	.menu__navs
+	{
+		display: none;
+	}
+	// --------------------------------------------- Right - Button ---------------------------------------------
+	.menu_right
+	{
+		display: none;
+	}
+	.dropdownIcon
+	{
+		display: block;
+	}
+	.menu__dropdown
+	{
+		display: block;
+	}
+	// --------------------------------------------- title ---------------------------------------------
+	.title
+	{
+		font-size: 40px;
+		line-height: 40px;
+		padding-bottom: 48px;
+		padding-top: 60px;
+	}
+	// --------------------------------------------- MainPage ---------------------------------------------
+	.main_page
+	{
+		margin-top: 60px;
+		display: block;
+		.main_page__left
+		{
+			width: 100%;
+			h1
+			{
+				text-align: center;
+				font-size: 75px;
+				line-height: 70px;
+				margin-bottom: 15px !important;
+			}
+			p
+			{
+				text-align: center;
+				font-size: 20px;
+			}
+			i
+			{
+				margin-bottom: 10px;
+				font-size: 16px;
+			}
+			.main_page__last
+			{
+				margin-top: 25px;
+				button
+				{
+					font-size: 18px;
+					padding: 10px 15px;
+				}
+			}
+		}
+		.main_page__right
+		{
+			margin: 0px auto;
+			width: 90%;
+			margin-top: 35px;
+		}
+	}
+	.main_page2
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		margin-top: 30px !important;
+	}
+	.main_page4
+	{
+		margin-top: 30px !important;
+	}
+	// --------------------------------------------- admin ---------------------------------------------
+	.admin
+	{
+		margin-top: 50px;
+	}
+	// --------------------------------------------- slick slider ---------------------------------------------
+	.slick-slide
+	{
+		margin: 0px 15px !important;
+	}	
+	.features
+	{
+		margin-top: 50px;
+		margin-bottom: 70px;
+		padding-bottom: 50px;
+		.features_block
+		{
+			padding-top: 40px;
+			padding-bottom: 40px;
+			h3
+			{
+				font-size: 22px;
+			}
+			p
+			{
+				font-size: 10px;
+			}
+		}
+	}
+	// --------------------------------------------- footer ---------------------------------------------
+	.footer__bottom
+	{
+		flex-direction: column;
+		&>p
+		{
+			margin-top: 10px;
+			margin-bottom: 15px;
+		}
+	}
+}
+// --------------------------------------------- Media 550 ---------------------------------------------
+@media screen and (max-width: 550px) 
+{
+	.main_page
+	{
+		margin-top: 50px;
+		.main_page__left
+		{
+			h1
+			{
+				font-size: 48px;
+				line-height: 55px;
+				margin-bottom: 15px !important;
+			}
+			p
+			{
+				text-align: center;
+				font-size: 16px;
+				line-height: 18px;
+			}
+			.main_page__last
+			{
+				margin-top: 15px;
+				button
+				{
+					font-size: 16px;
+					padding: 6px 10px;
+					margin-right: 10px;
+				}
+				img
+				{
+					display: none !important;
+				}
+			}
+		}
+		.main_page__right
+		{
+			margin: 0px auto;
+			width: 90%;
+			margin-top: 35px;
+		}
+	}
+	.main_page2
+	{
+		margin-top: 25px;
+		padding-bottom: 25px;
+		padding-top: 25px;
+	}
+	.main_page4
+	{
+		margin-top: 25px !important;
+	}
+	// --------------------------------------------- slick slider ---------------------------------------------
+	.slick-slide
+	{
+		margin: 0px 10px !important;
+	}
+	// --------------------------------------------- title ---------------------------------------------
+	.title
+	{
+		font-size: 30px;
+		line-height: 30px;
+		padding-bottom: 38px;
+		padding-top: 40px;
+	}
+	.feedback
+	{
+		p
+		{
+			font-size: 12px;
+		}
+		b
+		{
+			font-size: 10px;
+			margin-left: 5px;
+		}
+		img
+		{
+			width: 20px;
+			height: 20px;
+			display: block;		
+		}
+		i
+		{
+			font-size: 10px;
+		}
+		.feedback__user
+		{
+			margin-top: 15px;
+		}
+		.feedback__block
+		{
+			padding: 15px 10px !important;
+		}
+	}
+	.features
+	{
+		margin-top: 10px;
+		margin-bottom: 50px;
+		display: block;
+		.features_block
+		{
+
+			width: 90%;
+			padding-top: 30px;
+			padding-bottom: 30px !important;
+			margin: 0px auto !important;
+			margin-top: 10px;
+			padding-bottom: 111px;
+			h3
+			{
+				font-size: 30px;
+			}
+			p
+			{
+				font-size: 14px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1550px)
+{
+	.container-medium
+	{
+		width: 1110px;
+	}
+} 
